@@ -1,0 +1,42 @@
+[0m13:02:36.342495 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10794d580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10aada460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10aacff70>]}
+
+
+============================== 13:02:36.346581 | d131505c-0fe5-4a50-8549-e4b20f36a533 ==============================
+[0m13:02:36.346581 [info ] [MainThread]: Running with dbt=1.7.5
+[0m13:02:36.347173 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/arielwhittingham/.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m13:02:46.071633 [debug] [MainThread]: Starter project path: /Users/arielwhittingham/.pyenv/versions/3.9.4/lib/python3.9/site-packages/dbt/include/starter_project
+[0m13:02:46.081128 [info ] [MainThread]: 
+Your new dbt project "spotify_data" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m13:02:46.081618 [info ] [MainThread]: Setting up your profile.
+[0m13:02:46.084919 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No adapters available. Learn how to install an adapter by going to https://docs.getdbt.com/docs/connect-adapters#install-using-the-cli
+[0m13:02:46.103737 [debug] [MainThread]: Resource report: {"command_name": "init", "command_wall_clock_time": 9.81863, "process_user_time": 1.929112, "process_kernel_time": 0.216697, "process_mem_max_rss": "94224384", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m13:02:46.104457 [debug] [MainThread]: Command `dbt init` failed at 13:02:46.104309 after 9.82 seconds
+[0m13:02:46.104882 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10794d580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10aaa8ca0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10aacf5b0>]}
+[0m13:02:46.105276 [debug] [MainThread]: Flushing usage events
+[0m13:04:40.147034 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106ded040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10895c0d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108966f70>]}
+
+
+============================== 13:04:40.150829 | f303d433-8fc8-4b16-8077-b1538781e651 ==============================
+[0m13:04:40.150829 [info ] [MainThread]: Running with dbt=1.7.5
+[0m13:04:40.151393 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/arielwhittingham/.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:04:55.153302 [info ] [MainThread]: A project called spotify_data already exists here.
+[0m13:04:55.158517 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 15.064642, "process_user_time": 1.876632, "process_kernel_time": 0.175468, "process_mem_max_rss": "93536256", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m13:04:55.159654 [debug] [MainThread]: Command `dbt init` succeeded at 13:04:55.159421 after 15.07 seconds
+[0m13:04:55.160290 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106ded040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1088b35b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10895c700>]}
+[0m13:04:55.160875 [debug] [MainThread]: Flushing usage events

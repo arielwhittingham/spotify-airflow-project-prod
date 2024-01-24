@@ -7,5 +7,5 @@ RUN apt-get update \
 USER airflow
 RUN pip install psycopg2-binary==2.9.9 \
     && pip install boto3 \
-    && pip install dbt-core==1.7.5 \
-    && pip install connexion[swagger-ui] # --no-cache-dir
+    && pip install dbt-core==1.7.5
+

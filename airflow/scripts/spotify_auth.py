@@ -5,7 +5,6 @@ import json
 import datetime
 import os
 
-
 class SpotifyAPI:
     """
     Spotify API connected through Ariel's Client
@@ -80,8 +79,11 @@ class SpotifyAPI:
         try:
             parser = configparser.ConfigParser()
 
-            parser_path = os.path.expanduser("~")
-            parser_file = os.path.join(parser_path, "workspace/pipeline.ini")
+            os.chdir('/opt/airflow')
+            parser_path = os.getcwd()
+            parser_file = os.path.join(parser_path,
+                                       ".config/pipeline.ini")
+            print("parserFILE",parser_file)
             parser.read(parser_file)
             token_url = SpotifyAPI.token_url
 
@@ -124,6 +126,10 @@ class SpotifyAPI:
             return self._get_and_update_auth_token
         else:
             return self.auth_token
+
+
+if __name__ == "__main__":
+    spotify_auth = SpotifyAPI()
 
 
 class SpotifyAPIData(SpotifyAPI):

@@ -1,0 +1,112 @@
+[2024-02-04T23:02:14.698+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: get_spotify_recently_played_data_test.run_spotify_test_script scheduled__2024-02-04T22:40:00+00:00 [queued]>
+[2024-02-04T23:02:14.713+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: get_spotify_recently_played_data_test.run_spotify_test_script scheduled__2024-02-04T22:40:00+00:00 [queued]>
+[2024-02-04T23:02:14.714+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2024-02-04T23:02:14.735+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): run_spotify_test_script> on 2024-02-04 22:40:00+00:00
+[2024-02-04T23:02:14.739+0000] {standard_task_runner.py:60} INFO - Started process 308 to run task
+[2024-02-04T23:02:14.745+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'get_spotify_recently_played_data_test', 'run_spotify_test_script', 'scheduled__2024-02-04T22:40:00+00:00', '--job-id', '369', '--raw', '--subdir', 'DAGS_FOLDER/get_spotify_recently_played.py', '--cfg-path', '/tmp/tmpyx2tkatr']
+[2024-02-04T23:02:14.746+0000] {standard_task_runner.py:88} INFO - Job 369: Subtask run_spotify_test_script
+[2024-02-04T23:02:14.824+0000] {task_command.py:423} INFO - Running <TaskInstance: get_spotify_recently_played_data_test.run_spotify_test_script scheduled__2024-02-04T22:40:00+00:00 [running]> on host 5c2d277b1650
+[2024-02-04T23:02:14.915+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='get_spotify_recently_played_data_test' AIRFLOW_CTX_TASK_ID='run_spotify_test_script' AIRFLOW_CTX_EXECUTION_DATE='2024-02-04T22:40:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-02-04T22:40:00+00:00'
+[2024-02-04T23:02:14.920+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-02-04T23:02:14.922+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python3 /opt/airflow/scripts/get_spotify_recently_played_scratch.py airflow']
+[2024-02-04T23:02:14.939+0000] {subprocess.py:86} INFO - Output:
+[2024-02-04T23:02:15.195+0000] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2024-02-04T23:02:15.196+0000] {subprocess.py:93} INFO -   File "/opt/airflow/scripts/get_spotify_recently_played_scratch.py", line 6, in <module>
+[2024-02-04T23:02:15.197+0000] {subprocess.py:93} INFO -     from ..scripts.spotify_auth import *
+[2024-02-04T23:02:15.197+0000] {subprocess.py:93} INFO - ImportError: attempted relative import with no known parent package
+[2024-02-04T23:02:15.215+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2024-02-04T23:02:15.230+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/bash.py", line 212, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2024-02-04T23:02:15.234+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=get_spotify_recently_played_data_test, task_id=run_spotify_test_script, execution_date=20240204T224000, start_date=20240204T230214, end_date=20240204T230215
+[2024-02-04T23:02:15.250+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 369 for task run_spotify_test_script (Bash command failed. The command returned a non-zero exit code 1.; 308)
+[2024-02-04T23:02:15.284+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-02-04T23:02:15.315+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-02-04T23:11:26.264+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: get_spotify_recently_played_data_test.run_spotify_test_script scheduled__2024-02-04T22:40:00+00:00 [queued]>
+[2024-02-04T23:11:26.270+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: get_spotify_recently_played_data_test.run_spotify_test_script scheduled__2024-02-04T22:40:00+00:00 [queued]>
+[2024-02-04T23:11:26.271+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2024-02-04T23:11:26.279+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): run_spotify_test_script> on 2024-02-04 22:40:00+00:00
+[2024-02-04T23:11:26.282+0000] {standard_task_runner.py:60} INFO - Started process 468 to run task
+[2024-02-04T23:11:26.285+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'get_spotify_recently_played_data_test', 'run_spotify_test_script', 'scheduled__2024-02-04T22:40:00+00:00', '--job-id', '377', '--raw', '--subdir', 'DAGS_FOLDER/get_spotify_recently_played.py', '--cfg-path', '/tmp/tmpva45fp1i']
+[2024-02-04T23:11:26.286+0000] {standard_task_runner.py:88} INFO - Job 377: Subtask run_spotify_test_script
+[2024-02-04T23:11:26.321+0000] {task_command.py:423} INFO - Running <TaskInstance: get_spotify_recently_played_data_test.run_spotify_test_script scheduled__2024-02-04T22:40:00+00:00 [running]> on host 5c2d277b1650
+[2024-02-04T23:11:26.369+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='get_spotify_recently_played_data_test' AIRFLOW_CTX_TASK_ID='run_spotify_test_script' AIRFLOW_CTX_EXECUTION_DATE='2024-02-04T22:40:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-02-04T22:40:00+00:00'
+[2024-02-04T23:11:26.370+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-02-04T23:11:26.370+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python3 /opt/airflow/scripts/get_spotify_recently_played_scratch.py airflow']
+[2024-02-04T23:11:26.377+0000] {subprocess.py:86} INFO - Output:
+[2024-02-04T23:11:26.473+0000] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2024-02-04T23:11:26.473+0000] {subprocess.py:93} INFO -   File "/opt/airflow/scripts/get_spotify_recently_played_scratch.py", line 6, in <module>
+[2024-02-04T23:11:26.474+0000] {subprocess.py:93} INFO -     from custom_utils.spotify.scripts.spotify_auth import *
+[2024-02-04T23:11:26.474+0000] {subprocess.py:93} INFO - ModuleNotFoundError: No module named 'custom_utils'
+[2024-02-04T23:11:26.483+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2024-02-04T23:11:26.492+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/bash.py", line 212, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2024-02-04T23:11:26.494+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=get_spotify_recently_played_data_test, task_id=run_spotify_test_script, execution_date=20240204T224000, start_date=20240204T231126, end_date=20240204T231126
+[2024-02-04T23:11:26.505+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 377 for task run_spotify_test_script (Bash command failed. The command returned a non-zero exit code 1.; 468)
+[2024-02-04T23:11:26.538+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-02-04T23:11:26.556+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-02-04T23:12:56.840+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: get_spotify_recently_played_data_test.run_spotify_test_script scheduled__2024-02-04T22:40:00+00:00 [queued]>
+[2024-02-04T23:12:56.846+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: get_spotify_recently_played_data_test.run_spotify_test_script scheduled__2024-02-04T22:40:00+00:00 [queued]>
+[2024-02-04T23:12:56.847+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2024-02-04T23:12:56.855+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): run_spotify_test_script> on 2024-02-04 22:40:00+00:00
+[2024-02-04T23:12:56.858+0000] {standard_task_runner.py:60} INFO - Started process 509 to run task
+[2024-02-04T23:12:56.861+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'get_spotify_recently_played_data_test', 'run_spotify_test_script', 'scheduled__2024-02-04T22:40:00+00:00', '--job-id', '383', '--raw', '--subdir', 'DAGS_FOLDER/get_spotify_recently_played.py', '--cfg-path', '/tmp/tmp_5yc_158']
+[2024-02-04T23:12:56.862+0000] {standard_task_runner.py:88} INFO - Job 383: Subtask run_spotify_test_script
+[2024-02-04T23:12:56.895+0000] {task_command.py:423} INFO - Running <TaskInstance: get_spotify_recently_played_data_test.run_spotify_test_script scheduled__2024-02-04T22:40:00+00:00 [running]> on host 5c2d277b1650
+[2024-02-04T23:12:56.944+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='get_spotify_recently_played_data_test' AIRFLOW_CTX_TASK_ID='run_spotify_test_script' AIRFLOW_CTX_EXECUTION_DATE='2024-02-04T22:40:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-02-04T22:40:00+00:00'
+[2024-02-04T23:12:56.945+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-02-04T23:12:56.945+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python3 /opt/airflow/scripts/get_spotify_recently_played_scratch.py airflow']
+[2024-02-04T23:12:56.952+0000] {subprocess.py:86} INFO - Output:
+[2024-02-04T23:12:57.061+0000] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2024-02-04T23:12:57.062+0000] {subprocess.py:93} INFO -   File "/opt/airflow/scripts/get_spotify_recently_played_scratch.py", line 6, in <module>
+[2024-02-04T23:12:57.062+0000] {subprocess.py:93} INFO -     from custom_utils.spotify.scripts.spotify_auth import *
+[2024-02-04T23:12:57.062+0000] {subprocess.py:93} INFO - ModuleNotFoundError: No module named 'custom_utils'
+[2024-02-04T23:12:57.071+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2024-02-04T23:12:57.080+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/bash.py", line 212, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2024-02-04T23:12:57.082+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=get_spotify_recently_played_data_test, task_id=run_spotify_test_script, execution_date=20240204T224000, start_date=20240204T231256, end_date=20240204T231257
+[2024-02-04T23:12:57.090+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 383 for task run_spotify_test_script (Bash command failed. The command returned a non-zero exit code 1.; 509)
+[2024-02-04T23:12:57.115+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-02-04T23:12:57.131+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-02-04T23:15:58.738+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: get_spotify_recently_played_data_test.run_spotify_test_script scheduled__2024-02-04T22:40:00+00:00 [queued]>
+[2024-02-04T23:15:58.744+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: get_spotify_recently_played_data_test.run_spotify_test_script scheduled__2024-02-04T22:40:00+00:00 [queued]>
+[2024-02-04T23:15:58.745+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2024-02-04T23:15:58.753+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): run_spotify_test_script> on 2024-02-04 22:40:00+00:00
+[2024-02-04T23:15:58.756+0000] {standard_task_runner.py:60} INFO - Started process 570 to run task
+[2024-02-04T23:15:58.760+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'get_spotify_recently_played_data_test', 'run_spotify_test_script', 'scheduled__2024-02-04T22:40:00+00:00', '--job-id', '387', '--raw', '--subdir', 'DAGS_FOLDER/get_spotify_recently_played.py', '--cfg-path', '/tmp/tmpb77cp6gn']
+[2024-02-04T23:15:58.760+0000] {standard_task_runner.py:88} INFO - Job 387: Subtask run_spotify_test_script
+[2024-02-04T23:15:58.797+0000] {task_command.py:423} INFO - Running <TaskInstance: get_spotify_recently_played_data_test.run_spotify_test_script scheduled__2024-02-04T22:40:00+00:00 [running]> on host 5c2d277b1650
+[2024-02-04T23:15:58.848+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='get_spotify_recently_played_data_test' AIRFLOW_CTX_TASK_ID='run_spotify_test_script' AIRFLOW_CTX_EXECUTION_DATE='2024-02-04T22:40:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-02-04T22:40:00+00:00'
+[2024-02-04T23:15:58.849+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-02-04T23:15:58.850+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python3 /opt/airflow/scripts/get_spotify_recently_played_scratch.py airflow']
+[2024-02-04T23:15:58.856+0000] {subprocess.py:86} INFO - Output:
+[2024-02-04T23:15:58.959+0000] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2024-02-04T23:15:58.959+0000] {subprocess.py:93} INFO -   File "/opt/airflow/scripts/get_spotify_recently_played_scratch.py", line 6, in <module>
+[2024-02-04T23:15:58.959+0000] {subprocess.py:93} INFO -     from custom_utils.spotify.scripts.spotify_auth import *
+[2024-02-04T23:15:58.960+0000] {subprocess.py:93} INFO - ModuleNotFoundError: No module named 'custom_utils'
+[2024-02-04T23:15:58.970+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2024-02-04T23:15:58.979+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/bash.py", line 212, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2024-02-04T23:15:58.981+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=get_spotify_recently_played_data_test, task_id=run_spotify_test_script, execution_date=20240204T224000, start_date=20240204T231558, end_date=20240204T231558
+[2024-02-04T23:15:58.991+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 387 for task run_spotify_test_script (Bash command failed. The command returned a non-zero exit code 1.; 570)
+[2024-02-04T23:15:59.013+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-02-04T23:15:59.030+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

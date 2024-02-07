@@ -1,0 +1,64 @@
+[2024-02-04T23:00:01.489+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: get_spotify_recently_played_data_test.sleep scheduled__2024-02-04T22:40:00+00:00 [queued]>
+[2024-02-04T23:00:01.496+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: get_spotify_recently_played_data_test.sleep scheduled__2024-02-04T22:40:00+00:00 [queued]>
+[2024-02-04T23:00:01.497+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2024-02-04T23:00:01.505+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): sleep> on 2024-02-04 22:40:00+00:00
+[2024-02-04T23:00:01.508+0000] {standard_task_runner.py:60} INFO - Started process 274 to run task
+[2024-02-04T23:00:01.511+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'get_spotify_recently_played_data_test', 'sleep', 'scheduled__2024-02-04T22:40:00+00:00', '--job-id', '368', '--raw', '--subdir', 'DAGS_FOLDER/get_spotify_recently_played.py', '--cfg-path', '/tmp/tmpmvx1u3bs']
+[2024-02-04T23:00:01.512+0000] {standard_task_runner.py:88} INFO - Job 368: Subtask sleep
+[2024-02-04T23:00:01.546+0000] {task_command.py:423} INFO - Running <TaskInstance: get_spotify_recently_played_data_test.sleep scheduled__2024-02-04T22:40:00+00:00 [running]> on host 5c2d277b1650
+[2024-02-04T23:00:01.597+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='get_spotify_recently_played_data_test' AIRFLOW_CTX_TASK_ID='sleep' AIRFLOW_CTX_EXECUTION_DATE='2024-02-04T22:40:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-02-04T22:40:00+00:00'
+[2024-02-04T23:00:01.598+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-02-04T23:00:01.599+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'sleep 3']
+[2024-02-04T23:00:01.605+0000] {subprocess.py:86} INFO - Output:
+[2024-02-04T23:00:04.608+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-02-04T23:00:04.627+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=get_spotify_recently_played_data_test, task_id=sleep, execution_date=20240204T224000, start_date=20240204T230001, end_date=20240204T230004
+[2024-02-04T23:00:04.647+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-02-04T23:00:04.669+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-02-04T23:11:22.618+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: get_spotify_recently_played_data_test.sleep scheduled__2024-02-04T22:40:00+00:00 [queued]>
+[2024-02-04T23:11:22.625+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: get_spotify_recently_played_data_test.sleep scheduled__2024-02-04T22:40:00+00:00 [queued]>
+[2024-02-04T23:11:22.625+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2024-02-04T23:11:22.633+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): sleep> on 2024-02-04 22:40:00+00:00
+[2024-02-04T23:11:22.636+0000] {standard_task_runner.py:60} INFO - Started process 465 to run task
+[2024-02-04T23:11:22.639+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'get_spotify_recently_played_data_test', 'sleep', 'scheduled__2024-02-04T22:40:00+00:00', '--job-id', '376', '--raw', '--subdir', 'DAGS_FOLDER/get_spotify_recently_played.py', '--cfg-path', '/tmp/tmpov9qr7h5']
+[2024-02-04T23:11:22.640+0000] {standard_task_runner.py:88} INFO - Job 376: Subtask sleep
+[2024-02-04T23:11:22.673+0000] {task_command.py:423} INFO - Running <TaskInstance: get_spotify_recently_played_data_test.sleep scheduled__2024-02-04T22:40:00+00:00 [running]> on host 5c2d277b1650
+[2024-02-04T23:11:22.755+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='get_spotify_recently_played_data_test' AIRFLOW_CTX_TASK_ID='sleep' AIRFLOW_CTX_EXECUTION_DATE='2024-02-04T22:40:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-02-04T22:40:00+00:00'
+[2024-02-04T23:11:22.756+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-02-04T23:11:22.757+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'sleep 3']
+[2024-02-04T23:11:22.763+0000] {subprocess.py:86} INFO - Output:
+[2024-02-04T23:11:25.767+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-02-04T23:11:25.795+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=get_spotify_recently_played_data_test, task_id=sleep, execution_date=20240204T224000, start_date=20240204T231122, end_date=20240204T231125
+[2024-02-04T23:11:25.818+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-02-04T23:11:25.839+0000] {taskinstance.py:3280} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-02-04T23:12:52.525+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: get_spotify_recently_played_data_test.sleep scheduled__2024-02-04T22:40:00+00:00 [queued]>
+[2024-02-04T23:12:52.531+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: get_spotify_recently_played_data_test.sleep scheduled__2024-02-04T22:40:00+00:00 [queued]>
+[2024-02-04T23:12:52.532+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2024-02-04T23:12:52.540+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): sleep> on 2024-02-04 22:40:00+00:00
+[2024-02-04T23:12:52.543+0000] {standard_task_runner.py:60} INFO - Started process 506 to run task
+[2024-02-04T23:12:52.546+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'get_spotify_recently_played_data_test', 'sleep', 'scheduled__2024-02-04T22:40:00+00:00', '--job-id', '382', '--raw', '--subdir', 'DAGS_FOLDER/get_spotify_recently_played.py', '--cfg-path', '/tmp/tmpuo5sqxqh']
+[2024-02-04T23:12:52.547+0000] {standard_task_runner.py:88} INFO - Job 382: Subtask sleep
+[2024-02-04T23:12:52.581+0000] {task_command.py:423} INFO - Running <TaskInstance: get_spotify_recently_played_data_test.sleep scheduled__2024-02-04T22:40:00+00:00 [running]> on host 5c2d277b1650
+[2024-02-04T23:12:52.629+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='get_spotify_recently_played_data_test' AIRFLOW_CTX_TASK_ID='sleep' AIRFLOW_CTX_EXECUTION_DATE='2024-02-04T22:40:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-02-04T22:40:00+00:00'
+[2024-02-04T23:12:52.630+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-02-04T23:12:52.631+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'sleep 3']
+[2024-02-04T23:12:52.637+0000] {subprocess.py:86} INFO - Output:
+[2024-02-04T23:12:55.641+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-02-04T23:12:55.673+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=get_spotify_recently_played_data_test, task_id=sleep, execution_date=20240204T224000, start_date=20240204T231252, end_date=20240204T231255
+[2024-02-04T23:12:55.691+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-02-04T23:12:55.713+0000] {taskinstance.py:3280} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-02-04T23:15:54.750+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: get_spotify_recently_played_data_test.sleep scheduled__2024-02-04T22:40:00+00:00 [queued]>
+[2024-02-04T23:15:54.782+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: get_spotify_recently_played_data_test.sleep scheduled__2024-02-04T22:40:00+00:00 [queued]>
+[2024-02-04T23:15:54.783+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2024-02-04T23:15:54.823+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): sleep> on 2024-02-04 22:40:00+00:00
+[2024-02-04T23:15:54.834+0000] {standard_task_runner.py:60} INFO - Started process 567 to run task
+[2024-02-04T23:15:54.843+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'get_spotify_recently_played_data_test', 'sleep', 'scheduled__2024-02-04T22:40:00+00:00', '--job-id', '386', '--raw', '--subdir', 'DAGS_FOLDER/get_spotify_recently_played.py', '--cfg-path', '/tmp/tmp7j7lvbmf']
+[2024-02-04T23:15:54.890+0000] {standard_task_runner.py:88} INFO - Job 386: Subtask sleep
+[2024-02-04T23:15:55.051+0000] {task_command.py:423} INFO - Running <TaskInstance: get_spotify_recently_played_data_test.sleep scheduled__2024-02-04T22:40:00+00:00 [running]> on host 5c2d277b1650
+[2024-02-04T23:15:55.162+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='get_spotify_recently_played_data_test' AIRFLOW_CTX_TASK_ID='sleep' AIRFLOW_CTX_EXECUTION_DATE='2024-02-04T22:40:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-02-04T22:40:00+00:00'
+[2024-02-04T23:15:55.163+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-02-04T23:15:55.164+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'sleep 3']
+[2024-02-04T23:15:55.173+0000] {subprocess.py:86} INFO - Output:
+[2024-02-04T23:15:58.178+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-02-04T23:15:58.214+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=get_spotify_recently_played_data_test, task_id=sleep, execution_date=20240204T224000, start_date=20240204T231554, end_date=20240204T231558
+[2024-02-04T23:15:58.265+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-02-04T23:15:58.289+0000] {taskinstance.py:3280} INFO - 1 downstream tasks scheduled from follow-on schedule check

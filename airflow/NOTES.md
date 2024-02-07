@@ -68,6 +68,11 @@ docker system prune
 
 
 ```
+interact cont.
+```
+
+
+```
 
 ## prod deployment resources:
 
@@ -90,6 +95,19 @@ adding new files and directories to .gitignore
 then run:
 git rm -r --cached .
 ```
+
+## python
+![img.png](img.png)
+
+![img_1.png](img_1.png)
+
+```
+# check what modules are imported
+sys.modules.items()
+
+
+```
+
 
 
 
